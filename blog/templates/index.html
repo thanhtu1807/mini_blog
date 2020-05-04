@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block title %}
+<title>Mini Blog - Home</title>
+{% endblock %}
+
+{% block content %}
+<h1>Mini Blog Home</h1>
+<h2>Dynamic content</h2>
+<p>The mini blog has the following record counts</p>
+<ul>
+    <li><strong>Blogs:</strong> {{ num_blogs }}</li>
+    <li><strong>Bloggers:</strong> {{ num_bloggers }}</li>
+    <li><strong>Comments:</strong> {{ num_comments }}</li>
+</ul>
+{% endblock %}
